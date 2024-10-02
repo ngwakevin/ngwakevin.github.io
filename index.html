@@ -3,73 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Training</title>
+    <title>Cloud Training Platform</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav id="navbar">
+
+    <!-- Header Section -->
+    <header id="header">
         <div class="container">
-            <h1 class="logo">Cloud Training</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="logo">
+                <h1>CloudX</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#learn">Learn</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#learn" class="btn">Get Started</a>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="hero">
         <div class="container">
-            <h1>Master the Cloud</h1>
-            <p>Become a certified cloud expert. Start your journey today.</p>
-            <a href="#courses" class="btn">Explore Courses</a>
+            <h2>Empowering Cloud Skills</h2>
+            <p>Master the cloud with hands-on learning. Start your journey today and get certified in top cloud technologies.</p>
+            <a href="#learn" class="btn hero-btn">Explore Courses</a>
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section id="courses" class="courses">
+    <!-- Features Section -->
+    <section id="features">
         <div class="container">
-            <h2>Our Cloud Courses</h2>
-            <div class="course-list">
-                <div class="course-card">
-                    <h3>Cloud Fundamentals</h3>
-                    <p>Learn the basics of cloud computing, including popular platforms like AWS and Azure.</p>
-                    <a href="#" class="btn">Enroll Now</a>
+            <h2>Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Real-World Projects</h3>
+                    <p>Build cloud applications using real-world case studies and best practices.</p>
                 </div>
-                <div class="course-card">
-                    <h3>Advanced Cloud Architecting</h3>
-                    <p>Dive deeper into cloud architecture, covering security, networking, and automation.</p>
-                    <a href="#" class="btn">Enroll Now</a>
+                <div class="feature">
+                    <h3>Certifications</h3>
+                    <p>Get certified in AWS, Azure, and Google Cloud with recognized credentials.</p>
                 </div>
-                <div class="course-card">
+                <div class="feature">
+                    <h3>24/7 Support</h3>
+                    <p>Our instructors are available around the clock to guide you through the learning process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn Section -->
+    <section id="learn">
+        <div class="container">
+            <h2>What Will You Learn?</h2>
+            <div class="learn-grid">
+                <div class="learn-item">
+                    <h3>Cloud Foundations</h3>
+                    <p>Understand the basics of cloud computing and the services of popular platforms.</p>
+                </div>
+                <div class="learn-item">
+                    <h3>Advanced Architecting</h3>
+                    <p>Learn how to design and deploy scalable applications on the cloud.</p>
+                </div>
+                <div class="learn-item">
                     <h3>DevOps on Cloud</h3>
-                    <p>Master DevOps practices using cloud technologies such as CI/CD pipelines and containerization.</p>
-                    <a href="#" class="btn">Enroll Now</a>
+                    <p>Master CI/CD, containerization, and monitoring on cloud platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"The course gave me the confidence to handle real-world cloud projects."</p>
+                    <h4>John Doe</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"I passed the AWS certification exam on the first try thanks to CloudX!"</p>
+                    <h4>Jane Smith</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The hands-on labs were incredibly helpful in learning cloud concepts."</p>
+                    <h4>Emily Davis</h4>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Have any questions about our courses? Reach out to us.</p>
+            <h2>Contact Us</h2>
+            <p>Have questions? We’re here to help. Send us a message and we’ll get back to you.</p>
             <form>
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Cloud Training. All Rights Reserved.</p>
+        <p>&copy; 2024 CloudX. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
