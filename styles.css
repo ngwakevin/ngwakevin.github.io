@@ -3,12 +3,12 @@ body, h1, h2, p {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #004d99; /* Blue text for all content */
 }
 
 body {
     line-height: 1.6;
-    background-color: #f5f5f5;
+    background-color: #ffffff; /* White background */
 }
 
 .container {
@@ -18,13 +18,14 @@ body {
 
 /* Header */
 header {
-    background-color: #004d99;
-    color: white;
+    background-color: white; /* White background */
+    color: #004d99; /* Blue text */
     padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    border-bottom: 2px solid #004d99; /* Blue border for distinction */
 }
 
 header .container {
@@ -48,17 +49,17 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #004d99; /* Blue links */
     text-decoration: none;
     font-size: 16px;
 }
 
 header nav ul li a:hover {
-    color: #00cc66;
+    color: #0099cc; /* Lighter blue on hover */
 }
 
 header .btn {
-    background-color: #00cc66;
+    background-color: #004d99; /* Blue button */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -66,20 +67,18 @@ header .btn {
 }
 
 header .btn:hover {
-    background-color: #00994d;
+    background-color: #003366; /* Darker blue hover */
 }
 
 /* Hero Section */
 #hero {
     height: 100vh;
-    background-image: url('https://source.unsplash.com/1600x900/?cloud,technology');
-    background-size: cover;
-    background-position: center;
+    background-color: #ffffff; /* White background */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #004d99; /* Blue text */
     padding-top: 100px;
 }
 
@@ -94,26 +93,28 @@ header .btn:hover {
 }
 
 #hero .hero-btn {
-    background-color: #00cc66;
+    background-color: #004d99; /* Blue button */
     padding: 10px 30px;
+    color: white;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 #hero .hero-btn:hover {
-    background-color: #00994d;
+    background-color: #003366; /* Darker blue hover */
 }
 
 /* Features Section */
 #features {
     padding: 60px 0;
-    background-color: white;
+    background-color: #ffffff; /* White background */
     text-align: center;
 }
 
 #features h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #004d99;
+    color: #004d99; /* Blue heading */
 }
 
 .feature-grid {
@@ -124,29 +125,34 @@ header .btn:hover {
 }
 
 .feature {
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
+    border: 2px solid #004d99; /* Blue border */
 }
 
 .feature h3 {
-    color: #00cc66;
+    color: #004d99; /* Blue heading */
     margin-bottom: 10px;
+}
+
+.feature p {
+    color: #004d99; /* Blue text */
 }
 
 /* Learn Section */
 #learn {
     padding: 60px 0;
-    background-color: #f5f5f5;
+    background-color: #ffffff; /* White background */
     text-align: center;
 }
 
 #learn h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #004d99;
+    color: #004d99; /* Blue heading */
 }
 
 .learn-grid {
@@ -162,24 +168,29 @@ header .btn:hover {
     border-radius: 10px;
     width: 30%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #004d99; /* Blue border */
 }
 
 .learn-item h3 {
-    color: #00cc66;
+    color: #004d99; /* Blue heading */
     margin-bottom: 10px;
+}
+
+.learn-item p {
+    color: #004d99; /* Blue text */
 }
 
 /* Testimonials Section */
 #testimonials {
     padding: 60px 0;
-    background-color: white;
+    background-color: white; /* White background */
     text-align: center;
 }
 
 #testimonials h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #004d99;
+    color: #004d99; /* Blue heading */
 }
 
 .testimonial-grid {
@@ -190,28 +201,34 @@ header .btn:hover {
 }
 
 .testimonial {
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #004d99; /* Blue border */
+}
+
+.testimonial p {
+    color: #004d99; /* Blue text */
 }
 
 .testimonial h4 {
+    color: #004d99; /* Blue heading */
     margin-top: 20px;
 }
 
 /* Contact Section */
 #contact {
     padding: 60px 0;
-    background-color: #f5f5f5;
+    background-color: white; /* White background */
     text-align: center;
 }
 
 #contact h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #004d99;
+    color: #004d99; /* Blue heading */
 }
 
 #contact form {
@@ -225,12 +242,17 @@ header .btn:hover {
     padding: 10px;
     margin-bottom: 20px;
     font-size: 1rem;
-    border: 2px solid #ccc;
+    border: 2px solid #004d99; /* Blue border */
     border-radius: 5px;
 }
 
+#contact input:focus, #contact textarea:focus {
+    outline: none;
+    border-color: #0099cc; /* Light blue focus effect */
+}
+
 #contact button {
-    background-color: #00cc66;
+    background-color: #004d99; /* Blue button */
     color: white;
     padding: 10px 20px;
     font-size: 18px;
@@ -239,13 +261,18 @@ header .btn:hover {
 }
 
 #contact button:hover {
-    background-color: #00994d;
+    background-color: #003366; /* Darker blue hover */
 }
 
 /* Footer */
 footer {
-    background-color: #004d99;
-    color: white;
+    background-color: white; /* White footer */
+    color: #004d99; /* Blue text */
     text-align: center;
     padding: 20px 0;
+    border-top: 2px solid #004d99; /* Blue border */
+}
+
+footer p {
+    margin: 0;
 }
