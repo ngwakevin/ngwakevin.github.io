@@ -8,164 +8,219 @@ body, h1, h2, p {
 
 body {
     line-height: 1.6;
-    background-color: #f4f4f4; /* Light gray to provide contrast */
+    background-color: #f5f5f5;
 }
 
-/* Navbar */
-#navbar {
-    background-color: #004d99; /* Blue for the navbar */
-    padding: 1rem;
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #004d99;
     color: white;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
 
-#navbar .container {
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#navbar h1.logo {
+header h1 {
     font-size: 24px;
-    font-weight: bold;
 }
 
-#navbar .nav-links {
+header nav ul {
     list-style: none;
     display: flex;
+    gap: 20px;
 }
 
-#navbar .nav-links li {
-    margin-left: 20px;
+header nav ul li {
+    display: inline;
 }
 
-#navbar .nav-links a {
+header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
 }
 
-#navbar .nav-links a:hover {
-    color: #00cc66; /* Green hover for links */
+header nav ul li a:hover {
+    color: #00cc66;
+}
+
+header .btn {
+    background-color: #00cc66;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background-color: #00994d;
 }
 
 /* Hero Section */
-.hero {
+#hero {
     height: 100vh;
     background-image: url('https://source.unsplash.com/1600x900/?cloud,technology');
     background-size: cover;
     background-position: center;
-    color: white;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
 }
 
-.hero h1 {
-    font-size: 3rem;
+#hero h2 {
+    font-size: 48px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px #004d99; /* Shadow to give text depth */
 }
 
-.hero p {
+#hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
-.hero .btn {
-    background-color: #00cc66; /* Green button */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 18px;
+#hero .hero-btn {
+    background-color: #00cc66;
+    padding: 10px 30px;
     border-radius: 5px;
 }
 
-.hero .btn:hover {
-    background-color: #00994d; /* Darker green for hover effect */
+#hero .hero-btn:hover {
+    background-color: #00994d;
 }
 
-/* Courses Section */
-.courses {
+/* Features Section */
+#features {
     padding: 60px 0;
-    background-color: #fff; /* White background for clean contrast */
+    background-color: white;
     text-align: center;
 }
 
-.courses h2 {
+#features h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #004d99; /* Blue section heading */
+    color: #004d99;
 }
 
-.course-list {
+.feature-grid {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.course-card {
-    background-color: white;
+.feature {
+    background-color: #f9f9f9;
     padding: 20px;
-    width: 30%;
     border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
 }
 
-.course-card:hover {
-    transform: translateY(-10px); /* Lift on hover */
-}
-
-.course-card h3 {
-    font-size: 1.5rem;
+.feature h3 {
+    color: #00cc66;
     margin-bottom: 10px;
-    color: #00cc66; /* Green heading */
 }
 
-.course-card p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.course-card .btn {
-    background-color: #004d99; /* Blue button */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.course-card .btn:hover {
-    background-color: #003366; /* Darker blue hover */
-}
-
-/* Contact Section */
-.contact {
+/* Learn Section */
+#learn {
     padding: 60px 0;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     text-align: center;
 }
 
-.contact h2 {
+#learn h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #004d99; /* Blue heading */
+    color: #004d99;
 }
 
-.contact form {
+.learn-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.learn-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learn-item h3 {
+    color: #00cc66;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #004d99;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h4 {
+    margin-top: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #004d99;
+}
+
+#contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contact input, .contact textarea {
+#contact input, #contact textarea {
     width: 60%;
     padding: 10px;
     margin-bottom: 20px;
@@ -174,13 +229,8 @@ body {
     border-radius: 5px;
 }
 
-.contact input:focus, .contact textarea:focus {
-    border-color: #00cc66; /* Green focus for input fields */
-    outline: none;
-}
-
-.contact button {
-    background-color: #00cc66; /* Green button */
+#contact button {
+    background-color: #00cc66;
     color: white;
     padding: 10px 20px;
     font-size: 18px;
@@ -188,19 +238,14 @@ body {
     border-radius: 5px;
 }
 
-.contact button:hover {
-    background-color: #00994d; /* Darker green hover effect */
+#contact button:hover {
+    background-color: #00994d;
 }
 
 /* Footer */
 footer {
-    background-color: #004d99; /* Blue footer */
+    background-color: #004d99;
     color: white;
     text-align: center;
-    padding: 20px;
-    position: relative;
-}
-
-footer p {
-    margin: 0;
+    padding: 20px 0;
 }
